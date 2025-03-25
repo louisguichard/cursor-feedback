@@ -106,14 +106,14 @@ class FeedbackSystem:
                     var goodItem = document.createElement('div');
                     goodItem.textContent = 'Good';
                     goodItem.dataset.action = 'good';
-                    goodItem.style.cssText = 'padding: 8px 12px; cursor: pointer;';
+                    goodItem.style.cssText = 'padding: 8px 12px;';
                     goodItem.addEventListener('mouseover', function() { this.style.backgroundColor = '#f0f0f0'; });
                     goodItem.addEventListener('mouseout', function() { this.style.backgroundColor = ''; });
                     
                     var issueItem = document.createElement('div');
                     issueItem.textContent = 'Report Issue';
                     issueItem.dataset.action = 'issue';
-                    issueItem.style.cssText = 'padding: 8px 12px; cursor: pointer;';
+                    issueItem.style.cssText = 'padding: 8px 12px;';
                     issueItem.addEventListener('mouseover', function() { this.style.backgroundColor = '#f0f0f0'; });
                     issueItem.addEventListener('mouseout', function() { this.style.backgroundColor = ''; });
                     
@@ -149,13 +149,13 @@ class FeedbackSystem:
                     var cancelButton = document.createElement('button');
                     cancelButton.textContent = 'Cancel';
                     cancelButton.id = 'cancel-feedback';
-                    cancelButton.style.cssText = 'padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer; background-color: #f0f0f0;';
+                    cancelButton.style.cssText = 'padding: 8px 16px; border: none; border-radius: 4px; background-color: #f0f0f0;';
                     
                     // Create submit button
                     var submitButton = document.createElement('button');
                     submitButton.textContent = 'Submit';
                     submitButton.id = 'submit-feedback';
-                    submitButton.style.cssText = 'padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer; background-color: #4CAF50; color: white;';
+                    submitButton.style.cssText = 'padding: 8px 16px; border: none; border-radius: 4px; background-color: #4CAF50; color: white;';
                     
                     // Add buttons to container
                     modalButtons.appendChild(cancelButton);
