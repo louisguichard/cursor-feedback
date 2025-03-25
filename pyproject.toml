@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "cursor-feedback"
 version = "0.1.0"
-description = "A lightweight feedback system for Flask applications"
+description = "Lightweight Flask feedback tool to reduce Cursor Agent requests"
 readme = "README.md"
 requires-python = ">=3.6"
 license = { text = "MIT" }
@@ -15,17 +15,15 @@ authors = [
 dependencies = [
     "Flask>=2.0.0"
 ]
-
-[project.urls]
-Homepage = "https://github.com/louisguichard/cursor-feedback"
-
-[project.classifiers]
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Framework :: Flask",
 ]
+
+[project.urls]
+Homepage = "https://github.com/louisguichard/cursor-feedback"
 
 [tool.setuptools]
 py-modules = ["feedback"]
